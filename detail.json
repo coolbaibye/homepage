@@ -5,12 +5,12 @@
     "title":"DEEBRAIN-REPORT","url_git":"","url_demo":"./demo/deebrainMINA.gif"
   },
   "Cutout":{
-    "brief_intro":"Cutout is a real-time human segmentation model written in Python using Pytorch. The software is capable of recognizing <br>people in real time with different gestures in a video.<br><br> This model uses techniques from MobileNetV2 and UNet, and Dice loss, Focal loss and SSIM loss are used during training <br>in order to get plausible results.<br><br> I use 45986 images from ATR and CIHP dataset to train this model, and 5000 images are used for validation.<br><br> The pre-trained model size is only 9.72MB, which means that the model can be easily applied in mobile software.",
+    "brief_intro":"Cutout is a real-time human segmentation model written in Python using Pytorch. The software is capable of recognizing people in real time with different gestures in a video.<br><br> This model uses techniques from MobileNetV2 and UNet, and Dice loss, Focal loss and SSIM loss are used during training <br>in order to get plausible results.<br><br> I use 45986 images from ATR and CIHP dataset to train this model, and 5000 images are used for validation.<br><br> The pre-trained model size is only 9.72MB, which means that the model can be easily applied in mobile software.",
     "full_name":"Real-time Human Segmentation Model written in Python using Pytorch, light, stable and accurate",
     "title":"CUTOUT","url_git":"https://github.com/BaldwinHe/Cutout","url_demo":"./demo/Cutout.gif"
   },
   "Reacher":{
-    "brief_intro":"This project is a Pytorch implementation of DDPG(Deep Deterministic Policy Gradient) algorithm. <br><br> These agents use this method to learn actions at the same time, and PER(Prioritized Experience Replay) <br>is applied to accelerate the training process.",
+    "brief_intro":"This project is a Pytorch implementation of DDPG(Deep Deterministic Policy Gradient) algorithm. <br><br> These agents use this method to learn actions at the same time, and PER(Prioritized Experience Replay) is applied to accelerate the training process.",
     "full_name":"Multiple Agents Learn To Reach Target Places",
     "title":"REACHER","url_git":"","url_demo":"./demo/reacher.gif"},
   "Navigation":{

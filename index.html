@@ -6,25 +6,22 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.color.plus-names-2.1.2.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/colorChanger.js"></script>
+    <script type="text/javascript" src="js/vue.js"></script>
+
     <link rel="stylesheet" href="css/projectDetails.css">
     <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="css/projectsContainer.css">
     <link rel="stylesheet" href="css/label.css">
     <link rel="stylesheet" href="css/home.css">
-    <script type="text/javascript" src="js/colorChanger.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="0" >
-    <script type="text/javascript">
+    <script type="text/javascript" about="jquery">
         $('body').scrollspy({ target: '#navbar' })
         $('[data-spy="scroll"]').each(function () {
             var $spy = $(this).scrollspy('refresh')
@@ -67,22 +64,7 @@
             })
         })
     </script>
-<!--        <nav class="navbar navbar-light  justify-content-center fixed-top bar-text" id="navbar">-->
-<!--            <ul class="nav nav-pills" role="tablist">-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link bar-link-text active" href="#about">ABOUT</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link bar-link-text" href="#education">EDUCATION</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link bar-link-text" href="#experience">EXPERIENCE</a>-->
-<!--                </li>-->
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link bar-link-text" href="#work">WORK</a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </nav>-->
+
     <div class="container">
         <div class="row top-buffer" >
             <div class="col-lg-2 col-1"></div>
@@ -102,6 +84,7 @@
                                 2020 Globalink Research Internship award in the summer of 2020.
                                 <span class="bg-danger text-white ml-2 pl-1 pr-1">Canceled due to COVID-19 😥</span>
                             </p>
+                            <p>I will work as an AI intern in <a href="http://www.of3d.com/" class="btn-link color-changer">Original Force</a> this October.</p>
                             <p>My research interests lie primarily in the area of Computer Vision and Reinforcement Learning.</p>
                         </div>
                         <div class="text-center">
@@ -156,7 +139,7 @@
                             <b>Intelligent diagnosis of 3D medical images</b>, Jul. 2019 - Aug. 2019 <br>
                             DeeCamp Summer Internship in <i style="font-weight: bolder;font-family: 'Apple SD Gothic Neo'"> Sinovation Ventures AI Institute</i>
                             <br>QingXing Li, Fei Wang, Tao Song, Yu Liang , <b>Yanbai He</b>, Kongya Zhao, Yuanfang Qiao,
-                            <br>Yuanzhe Li, Zhiming Hao, Kaixiang Lin, Jiequn Xu(Designer)
+                             Yuanzhe Li, Zhiming Hao, Kaixiang Lin, Jiequn Xu(Designer)
                             <br><b>Best Engineering Award</b>
                             <br><a href="https://github.com/michaelliqx/Deecamp-MRI-Segmentation" class="btn-link">[code]</a>
                         <p class="school">
@@ -169,59 +152,38 @@
                 <!--            Work-->
                 <div class="row subtitle" id="work">work</div>
                 <div class="row project-row" id="project_lists">
-                    <div class="projects-container">
-                        <div class="project-card clickable text-unselectable highlight-card" about="Cutout">
-                            <img class="project-image" alt="Reacher" src="./demo/Cutout.gif">
+                    <div id="work-list" class="projects-container">
+                        <div v-for="(item) in items"
+                             class="project-card clickable text-unselectable"
+                             v-bind:class="item.card"
+                             v-bind:about="item.about">
+                            <img class="project-image" alt="#" v-bind:src="item.src">
                             <div class="info-bar">
-                                <div class="label-style">Cutout</div>
-                                <div><label class="label-minimal clickable label-style">CV</label></div>
+                                <div class="label-style">{{item.name}}</div>
+                                <div><label class="label-minimal clickable label-style">{{item.type}}</label></div>
                             </div>
                         </div>
-                        <div class="project-card clickable text-unselectable highlight-card" about="Reacher">
-                            <img class="project-image" alt="Reacher" src="./demo/reacher.gif">
-                            <div class="info-bar">
-                                <div class="label-style">Reacher</div>
-                                <div><label class="label-minimal clickable label-style">RL</label></div>
-                            </div>
-                        </div>
-                        <div class="project-card clickable text-unselectable highlight-card" about="Navigation">
-                            <img class="project-image" alt="Navigation" src="./demo/banana.gif">
-                            <div class="info-bar">
-                                <div class="label-style">Navigation</div>
-                                <div><label class="label-minimal clickable label-style">RL</label></div>
-                            </div>
-                        </div>
-                        <div class="project-card clickable text-unselectable normal-card" about="DeeBrainReport">
-                            <img class="project-image" alt="DeeBrainReport" src="./demo/deebrainMINA.gif">
-                            <div class="info-bar">
-                                <div class="label-style">DeeBrain Report</div>
-                                <div><label class="label-minimal clickable label-style">MINA</label></div>
-                            </div>
-                        </div>
-                        <div class="project-card clickable text-unselectable normal-card" about="CatchTigerChess">
-                            <img class="project-image" alt="CatchTigerChess" src="./demo/CatchTigerChess.png">
-                            <div class="info-bar">
-                                <div class="label-style">Catch Tiger Chess</div>
-                                <div>
-                                    <label class="label-minimal clickable label-style">Java</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card clickable text-unselectable normal-card" about="WannaEat">
-                            <img class="project-image" alt="CatchTigerChess" src="./demo/WannaEat.JPG">
-                            <div class="info-bar">
-                                <div class="label-style">WannaEat</div>
-                                <div>
-                                    <label class="label-minimal clickable label-style">Android</label>
-                                </div>
-                            </div>
-                        </div>
+                        <script type="text/javascript" about="vue">
+                            new Vue({
+                                el: '#work-list',
+                                data: {
+                                    items: [
+                                        { name: 'Cutout', src:'./demo/Cutout.gif', about:'Cutout',card:'highlight-card', type:'CV' },
+                                        { name: 'Reacher', src:'./demo/reacher.gif', about:'Reacher',card:'highlight-card', type:'RL' },
+                                        { name: 'Navigation', src:'./demo/banana.gif', about:'Navigation',card:'highlight-card', type:'RL' },
+                                        { name: 'DeeBrain Report', src:'./demo/deebrainMINA.gif', about:'DeeBrainReport',card:'normal-card', type:'MINA' },
+                                        { name: 'Catch Tiger Chess', src:'./demo/CatchTigerChess.png', about:'CatchTigerChess',card:'normal-card', type:'Java' },
+                                        { name: 'WannaEat', src:'./demo/WannaEat.JPG', about:'WannaEat',card:'normal-card', type:'Android' },
+                                    ]
+                                }
+                            })
+                        </script>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-1"></div>
         </div>
-        <div class="row project-detail-row" id="project_detail">
+        <div class="row" id="project_detail">
             <div class="col-1"></div>
             <div class="col-10">
                 <button type="button" class="btn" id="return-btn">SHOW ALL PROJECTS</button>
@@ -239,19 +201,23 @@
             </div>
             <div class="col-1"></div>
         </div>
+
         <div class="row end">
             <div class="col-lg-2 col-1"></div>
             <div class="col-lg-8 col-10">
-                <!--            End-->
                 <div><hr class="row container-fluid separator color-changer"></div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <p class="card-text"><small class="color-changer">Last updated April 2020</small></p>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <p class="card-text"><small class="color-changer">Last updated July 2020</small></p>
+                        </div>
                     </div>
                 </div>
-            </div>
             <div class="col-lg-2 col-1"></div>
         </div>
+        <div class="m-auto" style="width: 30%; padding-bottom: 20px;">
+            <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=Ixca1pEfhEp_UXQoqM3sxlIlk5FZJQK9uEK_O5QPaF4&cl=ffffff&w=a"></script>
+        </div>
+
     </div>
 </body>
 </html>
