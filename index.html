@@ -6,6 +6,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.color.plus-names-2.1.2.min.js"></script>
+    <script src="js/preload.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/colorChanger.js"></script>
@@ -22,6 +23,23 @@
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="0" >
     <script type="text/javascript" about="jquery">
+        function moduleLoad(path, type) {
+            $.get(path + type + ".html", function (result) {
+                var html = $(result);
+                var __templates = html;
+                $('[slot="' + type + '"]').each(function () {
+                    var id = $(this).attr('slot');
+                    var node = $(__templates).prop('content');
+                    var body = $(node).find('#' + id).html();
+                    $(this).html($(body));
+                });
+            });
+        }
+        $(document).ready(function () {
+            moduleLoad("./template/", "education");
+            moduleLoad("./template/", "internship");
+            moduleLoad("./template/", "experience");
+        });
         $('body').scrollspy({ target: '#navbar' })
         $('[data-spy="scroll"]').each(function () {
             var $spy = $(this).scrollspy('refresh')
@@ -73,19 +91,17 @@
                     <div class="col-lg-7 col-sm-10">
                         <div class="text-center name-desktop d-none d-lg-block">Yanbai He <span class="name-desktop_zh">何炎柏</span></div>
                         <div class="row">
-                            <div class="text-left name-phone d-lg-none">I'M <span class="name-phone-last">YANBAI</span> HE</div>
+                            <div class="text-left name-phone d-lg-none">Hi <br> I'M <span class="name-phone-last">YANBAI</span> HE</div>
                         </div>
                         <div class="row ">
                             <p>I am a senior undergraduate at Computer Science Department, Nanjing University of Posts and Telecommunications.
                                 Since my sophomore year, I have been conducting research on computer vision under the guidance of <b>Prof. Bo Jiang</b>.
                             </p>
-<!--                            <p class="text-muted">I have been successfully selected by <a href="https://www.mitacs.ca/en" class="btn-link">Mitacs</a> and-->
-<!--                                <a href="https://www.eng.mcmaster.ca/sept/people/faculty/zhen-gao" class="btn-link">Prof. Zhen Gao</a> from McMaster University to receive a-->
-<!--                                2020 Globalink Research Internship award in the summer of 2020.-->
-<!--                                <span class="bg-danger text-white ml-2 pl-1 pr-1">Canceled due to COVID-19 😥</span>-->
-<!--                            </p>-->
-<!--                            <p>Currently, I am working as an intern in <a href="http://www.of3d.com/" class="btn-link color-changer">Original Force</a>.</p>-->
+                            <p>Currently, I am working as an intern at <a href="https://www.tusimple.com/" class="btn-link color-changer">TuSimple</a>.</p>
                             <p>My research interests lie primarily in the area of Computer Vision and Brain Computer Interface.</p>
+                        </div>
+                        <div>
+                            <p>
                         </div>
                         <div class="text-center">
                             <a href="mailto:heyanbai@yahoo.com" class="btn-link">Email</a>/
@@ -103,65 +119,14 @@
         <div class="row content-segment">
             <div class="col-lg-2 col-1"></div>
             <div class="col-lg-8 col-10">
-                <!--            Education-->
-                <div class="row subtitle" id="education">Education</div>
-                <div class="row education ">
-                    <div class="col-3 d-flex  education align-items-center">
-                        <div class="col-sm-6">
-                            <img src="images/njupt.jpeg" class="rounded-0" style=" width: 200%;height: auto;" alt="...">
-                        </div>
-                    </div>
-                    <div class="col-9">
-                        <p class="school"><b>Sept. 2017 - Jul. 2021 (Expected)</b>, Computer Science Department,
-                            <i style="font-weight: bolder;font-family: 'Apple SD Gothic Neo'">Nanjing University of Posts and Telecommunications</i></p>
-                        <p class="school">Bachelor of Science, Computer Science.</p>
-                    </div>
-                </div>
-                <div class="row education ">
-                    <div class="col-3 d-flex  education align-items-center">
-                        <div class="col-sm-6">
-                            <img src="images/first_high_school_changsha.jpg" class="rounded-0" style="width: 200%;height: auto;" alt="...">
-                        </div>
-                    </div>
-                    <div class="col-9 align-items-center">
-                        <p class="school"><b>Sept. 2014 - Jul. 2017</b>,
-                            <i style="font-weight: bolder;font-family: 'Apple SD Gothic Neo'">The First High School of Changsha，Hunan</i></p>
-                    </div>
-                </div>
-                <!--            Experience-->
-                <div class="row subtitle" id="experience">Experience</div>
-                <div class="row experience ">
-                    <div class="col-lg-3 d-flex align-items-center">
-                        <img src="demo/deebrain.gif" class="rounded-0" width=100%  alt="...">
-                    </div>
-                    <div class="col-lg-9">
-                        <p class="school">
-                            <b>Intelligent diagnosis of 3D medical images</b>, Jul. 2019 - Aug. 2019 <br>
-                            DeeCamp Summer Internship in <i style="font-weight: bolder;font-family: 'Apple SD Gothic Neo'"> Sinovation Ventures AI Institute</i>
-                            <br>QingXing Li, Fei Wang, Tao Song, Yu Liang , <b>Yanbai He</b>, Kongya Zhao, Yuanfang Qiao,
-                             Yuanzhe Li, Zhiming Hao, Kaixiang Lin, Jiequn Xu(Designer)
-                            <br><b>Best Engineering Award</b>
-                            <br><a href="https://github.com/michaelliqx/Deecamp-MRI-Segmentation" class="btn-link">[code]</a>
-                        <p class="school">
-                            We use machine learning techniques to label glioma in brain MR images, predict patient’s life span and
-                            visualize tumor regions in 3D with a pathology report.
-                        </p>
-                        </p>
-                    </div>
-                </div>
-                <div class="row experience ">
-                    <div class="col-3 d-flex  education align-items-center">
-                        <div class="col-sm-6">
-                            <img src="images/of3d_logo.png" class="rounded-0" style="width: 200%;height: auto;" alt="...">
-                        </div>
-                    </div>
-                    <div class="col-9">
-                        <p class="school"><b>Oct. 2020 - Apr. 2021 </b>,R&D Department,
-                            <i style="font-weight: bolder;font-family: 'Apple SD Gothic Neo'">Original Force 3D Animation</i></p>
-                        <p class="school">Research & Development Intern.</p>
-                    </div>
-                </div>
-                <!--            Work-->
+<!--                Education-->
+                <div slot="education"></div>
+<!--                Internship-->
+                <div slot="internship"></div>
+<!--                Experience-->
+                <div slot="experience"></div>
+
+<!--                Work-->
                 <div class="row subtitle" id="work">work</div>
                 <div class="row project-row" id="project_lists">
                     <div id="work-list" class="projects-container">
@@ -185,7 +150,7 @@
                                         { name: 'Navigation', src:'./demo/banana.gif', about:'Navigation',card:'highlight-card', type:'RL' },
                                         { name: 'DeeBrain Report', src:'./demo/deebrainMINA.gif', about:'DeeBrainReport',card:'normal-card', type:'MINA' },
                                         { name: 'Catch Tiger Chess', src:'./demo/CatchTigerChess.png', about:'CatchTigerChess',card:'normal-card', type:'Java' },
-                                        { name: 'WannaEat', src:'./demo/WannaEat.JPG', about:'WannaEat',card:'normal-card', type:'Android' },
+                                        // { name: 'WannaEat', src:'./demo/WannaEat.JPG', about:'WannaEat',card:'normal-card', type:'Android' },
                                     ]
                                 }
                             })
@@ -220,7 +185,7 @@
                 <div><hr class="row container-fluid separator color-changer"></div>
                     <div class="card mb-3">
                         <div class="card-body">
-                            <p class="card-text"><small class="color-changer">Last updated April 2021</small></p>
+                            <p class="card-text"><small class="color-changer">Last updated May 2021</small></p>
                         </div>
                     </div>
                 </div>
