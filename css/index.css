@@ -64,7 +64,7 @@
 }
 .name-desktop_zh{
     font-size: 32px;
-    font-family: "Adobe Kaiti Std";
+    font-family: "Adobe Kaiti Std", adobe-kaiti-std, sans-serif, KaiTi;
 }
 .separator{
     margin-top: 20px;
