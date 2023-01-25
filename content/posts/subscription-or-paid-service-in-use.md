@@ -7,7 +7,7 @@ tags: ["资源", "iOS", "MacOS", "购物"]
 ShowToc: false
 ShowBreadCrumbs: true
 ---
-> 免责声明： 本文只是记录个人的所**正在使用**的软件服务（大部分都是iOS/MacOS平台），并不构成任何推广成分，我们每个人都应该根据自己具体情况与习惯选择合适的服务（避免冲动消费）。
+> 提醒： 本文只是记录个人的所**正在使用**的软件服务（大部分都是iOS/MacOS平台），并不构成任何推广成分，我们每个人都应该根据自己具体情况与习惯选择合适的服务（避免冲动消费）。
 
 1. [Reeder 5](https://www.reederapp.com/)：RSS订阅与阅读软件
 2. [OmniFocus 3](https://www.omnigroup.com/omnifocus)：GTD软件，_还在熟悉流程_
