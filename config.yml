@@ -44,18 +44,8 @@ params:
   showtoc: true
   tocopen: true
 
-  assets:
-#    disableHLJS: false # to disable highlight.js
-    # disableFingerprinting: true
-    favicon: "/assets/favicon.ico"
-    favicon16x16: "/assets/favicon.ico"
-    favicon32x32: "/assets/favicon.ico"
-    apple_touch_icon: "/assets/favicon.ico"
-    safari_pinned_tab: "/assets/favicon.ico"
-
   label:
     text: "Bai👋"
-    icon: /apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
