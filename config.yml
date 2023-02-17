@@ -150,6 +150,10 @@ menu:
       name: Blog
       url: blog
       weight: 10
+    - identifier: now
+      name: Now
+      url: now
+      weight: 10
     - name: Search
       url: search/
       weight: 10
