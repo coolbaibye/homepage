@@ -27,20 +27,20 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
-
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
-  ShowWordCount: true
+  ShowWordCount: false
+  ShowAuthor: false
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: true
   hidemeta: false
-  hideSummary: false
+  hideSummary: true
   showtoc: true
   tocopen: true
 
@@ -57,11 +57,6 @@ params:
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
 
   # home-info mode
   homeInfoParams:
@@ -71,22 +66,22 @@ params:
       
       - -
       
-      - Currently, as a second-year *Computer Applied Technology* graduated school 
-      student at **State Key Laboratory of Cognitive Neuroscience and Learning from 
-      Beijing Normal University**. 
+#      - Currently, as a second-year *Computer Applied Technology* graduated school 
+#      student at **State Key Laboratory of Cognitive Neuroscience and Learning from 
+#      Beijing Normal University**. 
       
-      - -
+#      - -
       
-      - I'm also a:
+#      - I'm also a:
       
-      > - **Full-stack developer**: I have 3+ years of full-stack development experience, and a rich skill set, including project planning and management. 
-      I specialize in *C++* and *Python*, but also familiar with Nodejs, Vue, and Java.
-      
-      > - **Cognitive neuroscience enthusiast/practitioner**: 
-        I'm inquisitive about how brains behave and work when people are under different cognitive levels and loads. 
-        I’ve analyzed EEG data of people during propofol anesthesia and UAV flight mission.
-      > - **Dancer**: Although I cannot isolate my body well and have no idea how to catch the beat(bit🤣), I enjoy FUNK music and practicing with friends. 
-          *Locking* and *Soul* are my focus, I also tried KPOP, Urban, and Hiphop.
+#      > - **Full-stack developer**: I have 3+ years of full-stack development experience, and a rich skill set, including project planning and management. 
+#      I specialize in *C++* and *Python*, but also familiar with Nodejs, Vue, and Java.
+#      
+#      > - **Cognitive neuroscience enthusiast/practitioner**: 
+#        I'm inquisitive about how brains behave and work when people are under different cognitive levels and loads. 
+#        I’ve analyzed EEG data of people during propofol anesthesia and UAV flight mission.
+#      > - **Dancer**: Although I cannot isolate my body well and have no idea how to catch the beat(bit🤣), I enjoy FUNK music and practicing with friends. 
+#          *Locking* and *Soul* are my focus, I also tried KPOP, Urban, and Hiphop.
 
 #      - -
 #      ### Education
@@ -143,23 +138,27 @@ params:
 menu:
   main:
     - identifier: about
-      name: About
+      name: 关于
       url: /
-      weight: 10
-    - identifier: blog
-      name: Blog
-      url: blog
-      weight: 10
-    - identifier: now
-      name: Now
-      url: now
-      weight: 10
-    - name: Search
+      weight: 1
+    - identifier: timeline
+      name: 时间线
+      url: archives
+      weight: 9
+    - identifier: collect
+      name: 收集
+      url: posts/collect
+      weight: 3
+    - identifier: post
+      name: 博文
+      url: posts/post
+      weight: 2
+    - name:  搜索 🔍
       url: search/
       weight: 10
-    - name: Tags
+    - name: 标签
       url: tags/
-      weight: 10
+      weight:  8
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 
 markup:
