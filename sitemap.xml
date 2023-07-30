@@ -2,11 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.baibye.fun/now/</loc>
-    <lastmod>2023-02-17T00:00:00+00:00</lastmod>
+    <loc>https://blog.baibye.fun/tags/2023/</loc>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.baibye.fun/</loc>
-    <lastmod>2023-01-23T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.baibye.fun/posts/</loc>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.baibye.fun/tags/</loc>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.baibye.fun/tags/%E6%91%98%E6%8A%84/</loc>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.baibye.fun/posts/collect/2023-07-collect/</loc>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.baibye.fun/posts/collect/</loc>
+    <lastmod>2023-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.baibye.fun/tags/ios/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
@@ -14,19 +29,19 @@
     <loc>https://blog.baibye.fun/tags/macos/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.baibye.fun/posts/</loc>
+    <loc>https://blog.baibye.fun/posts/post/brands-that-will-buy-back/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.baibye.fun/tags/</loc>
-    <lastmod>2023-01-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.baibye.fun/posts/brands-that-will-buy-back/</loc>
+    <loc>https://blog.baibye.fun/posts/post/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.baibye.fun/tags/%E5%AE%B6%E5%B1%85/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.baibye.fun/posts/subscription-or-paid-service-in-use/</loc>
+    <loc>https://blog.baibye.fun/posts/post/useful-tool-list/</loc>
+    <lastmod>2023-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.baibye.fun/posts/post/subscription-or-paid-service-in-use/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.baibye.fun/tags/%E8%B4%AD%E7%89%A9/</loc>
@@ -35,10 +50,12 @@
     <loc>https://blog.baibye.fun/tags/%E8%B5%84%E6%BA%90/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.baibye.fun/blog/</loc>
-  </url><url>
     <loc>https://blog.baibye.fun/categories/</loc>
   </url><url>
     <loc>https://blog.baibye.fun/search/</loc>
+  </url><url>
+    <loc>https://blog.baibye.fun/archives/</loc>
+  </url><url>
+    <loc>https://blog.baibye.fun/posts/read/</loc>
   </url>
 </urlset>

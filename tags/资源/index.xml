@@ -11,11 +11,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.baibye.fun/tags/%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>正在订阅或已付费软件服务</title>
-      <link>https://blog.baibye.fun/posts/subscription-or-paid-service-in-use/</link>
+      <title>有用的工具列表</title>
+      <link>https://blog.baibye.fun/posts/post/useful-tool-list/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.baibye.fun/posts/subscription-or-paid-service-in-use/</guid>
+      <guid>https://blog.baibye.fun/posts/post/useful-tool-list/</guid>
+      <description>数据库  兼容MySQL的免费的云数据库  PlanetScale：免费账号有5G的容量 Prisma：配合JavaSript特别方便 PingCap的TiDB    图像  rembg 用Python给图片移除背景  有命令行工具   reccap.it：把Youtube视频转换为自动生成key points图文，方便浏览检索和分享 table-reader：OCR图片表格 =&amp;gt; CSV/Excel 表格 Upscayl：图像放大工具 carbon：代码截图 Detexify：手工画出“大致的样子”就能查询对应的Latex写法！ vectorizer.ai：在线将jpg、png等位图矢量化，转为svg格式保存。 BarberGPT.ai：不用Photoshop也能换发型  pixian.ai hairstyleai.com：贵   Cloudcraft – Draw AWS diagrams：创建一个基于云的基础设施,并使用3D工具和技术以更好的方式将其可视化 WechatMomentScreenshot：朋友圈转发截图生成工具  git.io/WMS   Queryable ：「寻隐/Queryable」是一个离线的自然语言相册搜索工具  Run OpenAI&amp;rsquo;s CLIP model on iPhone to search photos. 开发学习    语音  whisper：OpenAI的语音识别模型  C/C++实现  表现  准确率高 没有标点 中文会有些同音，但不对的字 能产生srt，vtt字幕 large 的 model，1 小时的 talk 大约要 30 分钟、medium 约 16 分钟，但 medium 错误就蛮明显 翻译功能（中=&amp;gt;英）   部署  没有外部依赖 不需要联网 内存使用率低   支持几乎所有的主流平台：  Mac OS (Intel and Arm) iOS Android Linux / FreeBSD WebAssembly Windows (MSVC and MinGW] Raspberry Pi     使用SwiftUI的Demo需注意  先要下载好Model，如何下载模型在它的models目录下有说明： github.</description>
+    </item>
+    
+    <item>
+      <title>正在订阅或已付费软件服务</title>
+      <link>https://blog.baibye.fun/posts/post/subscription-or-paid-service-in-use/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.baibye.fun/posts/post/subscription-or-paid-service-in-use/</guid>
       <description> 提醒： 本文只是记录个人的所正在使用的软件服务（大部分都是iOS/MacOS平台），并不构成任何推广成分，我们每个人都应该根据自己具体情况与习惯选择合适的服务（避免冲动消费）。
   Reeder 5：RSS订阅与阅读软件 OmniFocus 3：GTD软件，还在熟悉流程 MindMaster：思维导图软件  买后没多久，学校就购买了XMind教育版了，难过QAQ&amp;hellip;   MarginNote 3：PDF电子阅读与笔记整理软件 Streaks：习惯养成软件 Apple Music Cubox Pro：信息收集和管理 MoneyThings：记账软件 Parallels Desktop：MacOS上的虚拟机软件 Express🪜（不好用&amp;hellip;经常连不上&amp;hellip;考虑换掉😢）  </description>
     </item>
