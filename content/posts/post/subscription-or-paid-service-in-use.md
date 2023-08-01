@@ -19,4 +19,3 @@ ShowBreadCrumbs: true
 7. [Cubox Pro](https://cubox.cc/)：信息收集和管理
 8. [MoneyThings](https://apps.apple.com/cn/app/moneythings-%E8%AE%B0%E8%B4%A6/id1549694221)：记账软件
 9. [Parallels Desktop](https://www.parallels.cn/)：MacOS上的虚拟机软件
-10. Express🪜（不好用...经常连不上...考虑换掉😢）
